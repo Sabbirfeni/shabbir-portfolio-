@@ -6,39 +6,41 @@ import { styles } from '../style'
 import { ComputersCanvas } from './canvas'
 export default function Hero() {
   return (
-    <section className='relative w-full h-screen flex justify-center items-center flex-row mx-auto'>
-      <div className={`${styles.paddingX} max-w-7xl flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+    <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <section className='relative w-full h-screen flex xl:flex-row flex-col flex-col-reverse justify-center items-center flex-row mx-auto'>
+        <div className={`${styles.paddingX} max-w-7xl flex flex-row items-start gap-5`}>
+          <div className='flex flex-col justify-center items-center mt-5'>
+            <div className='w-5 h-5 rounded-full bg-[#915eff]' />
+            <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+          </div>
+          <div>
+            <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm
+            <span className='text-[#915eff]'> Shabbir</span></h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop 3D visuals, user <br className='sm:block hidden'/> interfaces and web applications</p>
+          </div>
         </div>
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm
-          <span className='text-[#915eff]'> Shabbir</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop 3D visuals, user <br className='sm:block hidden'/> interfaces and web applications</p>
-        </div>
-      </div>
-      <div>
-        image
-      </div>
-      {/* <ComputersCanvas/> */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href="#about" className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-          <motion.div 
-            animate={{
-              y: [0, 24, 0]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatType: 'loop'
-            }}
-            className='w-3 h-3 rounded-full bg-secondary mb-1'
-          >
+        {/* <div>
+          image
+        </div> */}
+        {/* <ComputersCanvas/> */}
+        {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+          <a href="#about" className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div 
+              animate={{
+                y: [0, 24, 0]
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: 'loop'
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            >
 
-          </motion.div>
-        </a>
-      </div>
-    </section>
+            </motion.div>
+          </a>
+        </div> */}
+      </section>
+    </div>
   )
 }

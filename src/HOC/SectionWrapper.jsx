@@ -4,7 +4,8 @@ import { styles } from '../style';
 import { staggerContainer } from "../utils/motion";
 import { motion } from 'framer-motion';
 
-const SectionWrapper = (Component, idName) => function HOC() {
+const SectionWrapper = (Component, idName) => function HOC(props) {
+    
     return (
         <motion.section
             variants={staggerContainer()}
@@ -14,7 +15,7 @@ const SectionWrapper = (Component, idName) => function HOC() {
             className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
             
             <span className="hash-span" id={idName}>&nbsp;</span>
-            <Component/>
+            <Component {...props}/>
         </motion.section>
     )
 }

@@ -1,21 +1,19 @@
 // import React from "react";
 
-import About from "../components/About";
-import Hero from "../components/Hero";
-import Navbar from '../components/Navbar';
-import Experience from '../components/Experience';
+import { Hero, Navbar, About, Experience, Tech, Works, Feedbacks, Contact } from "../components";
 
 export default function RootLayout() {
   return (
         <div className="relative z-0 bg-primary">
-            <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+            <div>
                 <Navbar/>
                 <Hero/>
                 <About/>
                 <Experience/>
-                <Experience/>
-                <Experience/>
-                <Experience/>
+                <Tech/>
+                <Works/>
+                <Feedbacks/>
+                <Contact/>
             </div>
         </div>
     );

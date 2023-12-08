@@ -48,7 +48,6 @@ const Experience = () => {
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => {
-            console.log(experience);
             return <ExperienceCard key={experience.title} {...experience}/>
           })}
         </VerticalTimeline>
@@ -56,4 +55,4 @@ const Experience = () => {
     </>
   )
 }
-export default SectionWrapper(Experience, 'work');
+export default SectionWrapper(Experience, 'experience');

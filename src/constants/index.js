@@ -24,7 +24,9 @@ import {
     tripguide,
     threejs,
   } from "../assets";
-  
+  import {
+    close
+  } from '../assets'
   export const navLinks = [
     {
       id: "about",
@@ -63,54 +65,76 @@ import {
     {
       name: "HTML 5",
       icon: html,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
     },
     {
       name: "CSS 3",
       icon: css,
+      animeUrl: 'https://assets5.lottiefiles.com/packages/lf20_zzm4wo98.json',
     },
     {
       name: "JavaScript",
       icon: javascript,
+      animeUrl: 'https://assets3.lottiefiles.com/packages/lf20_qhiilviw.json',
     },
     {
       name: "TypeScript",
       icon: typescript,
+      animeUrl: null,
     },
     {
       name: "React JS",
       icon: reactjs,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "Redux Toolkit",
       icon: redux,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "Tailwind CSS",
       icon: tailwind,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "Node JS",
       icon: nodejs,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "MongoDB",
       icon: mongodb,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "Three JS",
       icon: threejs,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "git",
       icon: git,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "figma",
       icon: figma,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
     {
       name: "docker",
       icon: docker,
+      animeUrl: 'https://assets3.lottiefiles.com/private_files/lf30_wuuqhfmi.json',
+      techLogo: null
     },
   ];
   
